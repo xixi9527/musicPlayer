@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomHeadView2">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ipD-Qd-nh2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTE-5F-4kZ">
+                    <rect key="frame" x="185" y="158" width="171" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="8EY-vj-WCf"/>
+                        <constraint firstAttribute="width" constant="171" id="YkN-1I-4SB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DTE-5F-4kZ" secondAttribute="bottom" constant="21" id="25h-HM-ONL"/>
+                <constraint firstAttribute="bottom" secondItem="ipD-Qd-nh2" secondAttribute="bottom" id="9cL-uI-Xqv"/>
+                <constraint firstAttribute="trailing" secondItem="ipD-Qd-nh2" secondAttribute="trailing" id="CNo-JQ-dg3"/>
+                <constraint firstItem="ipD-Qd-nh2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NYL-Li-1BG"/>
+                <constraint firstAttribute="trailing" secondItem="DTE-5F-4kZ" secondAttribute="trailing" constant="19" id="q7e-0r-TxO"/>
+                <constraint firstItem="ipD-Qd-nh2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sod-SM-26h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bigImgView" destination="ipD-Qd-nh2" id="O3i-OP-c9V"/>
+                <outlet property="timeLabel" destination="DTE-5F-4kZ" id="TxW-wP-Mnm"/>
+            </connections>
+            <point key="canvasLocation" x="188.5" y="225"/>
+        </view>
+    </objects>
+</document>
